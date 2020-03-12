@@ -97,6 +97,9 @@ end
 class PBXShellScriptBuildPhase < PBXBuildPhase
 end
 
+class PBXCopyFilesBuildPhase < PBXBuildPhase
+end
+
 class PBXGroup < PBXObject
   def children recursive=false
     children = self.project_file.objects_with_uuids self["children"]
